@@ -1,14 +1,32 @@
-import { FC } from "react";
+import {FC} from "react";
+import styled from "styled-components";
 
+import Logo from "./Logo";
 import Navbar from "./Navbar";
+import PrivateOffice from "./PrivateOffice";
 
-import styles from "../styles/components/Header.module.scss";
+const StyledHeader = styled.header`
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+`
+const HeaderWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 35px;
+  height: 80px;
+`
 
 const Header: FC = () => {
   return (
-    <header className={styles.header}>
-      <Navbar />
-    </header>
+    <StyledHeader>
+      <HeaderWrapper>
+        <Logo/>
+        <Navbar/>
+        <PrivateOffice/>
+      </HeaderWrapper>
+    </StyledHeader>
   );
 };
 

@@ -1,13 +1,24 @@
-import { FC } from "react";
+import {FC} from "react";
+import styled from "styled-components";
 
-import styles from "../styles/components/Footer.module.scss";
+const StyledFooter = styled.footer`
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  color: rgb(100, 100, 100);
+
+  p {
+    text-align: right;
+  }
+`
 
 const Footer: FC = () => {
   return (
-    <footer className={styles.footer}>
-      <h1>Footer</h1>
-    </footer>
+    <StyledFooter>
+      <p>© 2022, КИВИ Банк (АО), лицензия ЦБ РФ № 2241</p>
+      <p>Россия, 117648, г. Москва, мкр. Чертаново Северное, д.1А, корп.1</p>
+    </StyledFooter>
   );
-};
+}
 
 export default Footer;
