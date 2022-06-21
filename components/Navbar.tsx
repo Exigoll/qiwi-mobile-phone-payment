@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const navigation = [
-  {id: 1, title: "Платежи и переводы", path: "/id1"},
+  {id: 1, title: "Платежи и переводы", path: "/operators"},
   {id: 2, title: "Банковские карты", path: "/id2"},
   {id: 3, title: "Пополнение кошелька", path: "/id3"},
   {id: 4, title: "Помощь", path: "/id4"},

@@ -1,7 +1,7 @@
 import {FC} from "react";
 import styled from "styled-components";
 
-const StyledButton = styled.div`
+const StyledButton = styled.button`
   font-size: 14px;
   line-height: 14px;
   padding: 15px 25px;

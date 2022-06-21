@@ -1,7 +1,7 @@
 import {FC} from "react";
 import styled from "styled-components";
 
-import Button from "./Button";
+import Button from "./Buttons/Button";
 
 const StyledPrivateOffice = styled.div`
   display: flex;

@@ -1,13 +1,16 @@
 import {FC} from "react";
 import styled from "styled-components";
 
-import Logo from "./Logo";
 import Navbar from "./Navbar";
 import PrivateOffice from "./PrivateOffice";
+import Image from "next/image";
+import logo from "../public/svg/logo.svg";
 
 const StyledHeader = styled.header`
-  width: 100%;
+  max-width: 1440px;
   height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
   background-color: #fff;
 `
 const HeaderWrapper = styled.div`
@@ -22,7 +25,10 @@ const Header: FC = () => {
   return (
     <StyledHeader>
       <HeaderWrapper>
-        <Logo/>
+        <Image src={logo}
+               width={95}
+               height={48}
+               alt="Logo"/>
         <Navbar/>
         <PrivateOffice/>
       </HeaderWrapper>

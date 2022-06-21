@@ -6,6 +6,7 @@ const StyledFooter = styled.footer`
   line-height: 14px;
   font-weight: 300;
   color: rgb(100, 100, 100);
+  background-color: rgb(245 245 245);
 
   p {
     text-align: right;
